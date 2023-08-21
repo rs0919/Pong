@@ -9,6 +9,11 @@ public class StartController : MonoBehaviour
     private string difficultySelect = "DifficultySelectScreen";
     private string twoPlayerGame = "MainGame";
 
+    private void Start()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void DifficultySelect()
     {
         // 0 is false, 1 is true.
